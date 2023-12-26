@@ -1,3 +1,9 @@
+# custom folder
+outdated/
+report/
+Export/
+Data/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
