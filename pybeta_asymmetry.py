@@ -285,7 +285,7 @@ def momentum(pf_value, lookback, rebalance=None, method='long_short', hurdle=0.8
     short_weight = [0] * lookback
     for i in tqdm(range(lookback, len(pf_return)), desc="Calculating Momentum..."):
         long_weight.append( np.sum(pf_return.values[i-lookback:i] > 0) / lookback )
-        short_weight.append( np.sum(pf_return.values[i-lookback:i] < 0) / lookback )
+        short_weight.append( np.sum(pf_return.values[i-lookback:i] < 0) / lookback ) 
 
     if method == 'proportional':
         weight = long_weight
